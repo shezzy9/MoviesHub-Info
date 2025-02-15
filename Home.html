@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieInfo Hub - Your Movie Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MovieInfo Hub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="search" placeholder="Search for movies...">
+            <button>Search</button>
+        </section>
+
+        <section class="categories">
+            <button>Latest Reviews</button>
+            <button>Top Rated</button>
+            <button>Coming Soon</button>
+            <button>Trending</button>
+        </section>
+
+        <section class="movie-grid">
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg" alt="Oppenheimer">
+                <div class="movie-info">
+                    <h3>Oppenheimer</h3>
+                    <div class="rating">★★★★★ 9.0/10</div>
+                    <p class="review-preview">A masterful biographical thriller about the creation of the atomic bomb...</p>
+                    <a href="reviews/oppenheimer.html" class="read-more">Read Review</a>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/A7JQ7MIV5fkIxceI5hizRIe6gXo.jpg" alt="Barbie">
+                <div class="movie-info">
+                    <h3>Barbie</h3>
+                    <div class="rating">★★★★☆ 7.5/10</div>
+                    <p class="review-preview">A colorful and surprisingly thoughtful take on the iconic doll...</p>
+                    <a href="reviews/barbie.html" class="read-more">Read Review</a>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg" alt="Poor Things">
+                <div class="movie-info">
+                    <h3>Poor Things</h3>
+                    <div class="rating">★★★★½ 8.5/10</div>
+                    <p class="review-preview">A visually stunning and darkly humorous Victorian fantasy...</p>
+                    <a href="reviews/poor-things.html" class="read-more">Read Review</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MovieInfo Hub. All rights reserved.</p>
+        <p>This site is for informational purposes only. We are not affiliated with any streaming service.</p>
+    </footer>
+
+    <script src="js/movieHandler.js"></script>
+    <script>
+        const movieHandler = new MovieHandler();
+    </script>
+</body>
+</html>
